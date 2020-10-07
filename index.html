@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+  <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+               <img src="images/banner-alexander-valley.jpg" class="banner-image">
+               <div class="banner-headline">
+                <span>PLAN YOUR VISIT</span>
+                <p>The Silver Oak Experience</p>
+             </div>
+             <div class="linebreak">
+               <hr></hr>
+             </div>
+              </div>
+              <div class="swiper-slide">
+              <img src="images/bottle2.jpg" class="banner-image">
+              <div class="banner-headline">
+                <span>New Release</span>
+                <p>2016 Alexander Valley Cabernet</p>
+             </div>
+             <div class="linebreak">
+              <hr></hr>
+            </div>
+              </div>
+              
+              <div class="swiper-slide">
+               <img src="images/home-hero2.jpg" class="banner-image">
+               <div class="banner-headline">
+                <span>Coming fall 2020</span>
+                <p>Timeless Napa Valley</p>
+             </div>
+             <div class="linebreak">
+              <hr></hr>
+            </div>
+              </div>
+              
+            
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+         
+          </div>
+    </div>
+    <div class="header">
+
+      <div class="header-firstsection">
+          <div>
+            <span class="twomey">TWOMEY</span>
+            <span class="Timeless">Timeless</span>
+         
+          </div>
+          <div>
+            <span class="Account">Account</span>
+            <span class="Cart"> Cart</span>
+            
+          </div>
+      </div>
+      <div class="header-secondsection">
+           <div class="logo">
+             <p>SILVER OAK</p>
+           </div>
+           <div class="header-secondsection-secsection">
+              <ul>
+                <li><a href="#">Shop<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">Visit<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">Explore<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">Food<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">About<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">Blog<i class="fa fa-caret-down"></i></a></li>
+              </ul>
+           </div>
+           <div class="header-secondsection-thirdsection">
+            <ul>
+              <li><a href="#">Subscribe</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    
+    <!-- next -->
+      
+    <div class="California-cabernate">
+      <span>TRIED AND TRUE SINCE 1972</span>
+      <p>California Cabernet Sauvignon Aged Exclusively in American Oak</p>
+    </div>
+ 
+    <!-- Shop Winery-Direct -->
+          
+    <div class="Shop-Winery-Direct">
+      <div class="Shop-Winery-Direct-image">
+        <img src="images/shop-silver-oak-wines-2016-alex.png">
+      </div>
+      <div class="Shop-Winery-Direct-text">
+         <span>ONLY AT SILVER OAK</span>
+         <p>Shop Winery-Direct Exclusives</p>
+         <p class="Shop-latest-releases">Shop the latest releases of Silver Oak Cabernet Sauvignon, along with exclusive offers, rare and limited edition wines, as well as the latest merchandise from our tasting rooms.</p>
+         <a>Shop Now</a>
+         <i class="fas fa-long-arrow-alt-right"></i>
+      </div>
+    </div>
+
+    <!-- Wine Country Awaits -->
+  <div class="Wine-Country-Awaits">
+        <div class="Wine-Country-Awaits-text">
+        <span>PLAN YOUR VISIT</span>
+        <p>Wine Country Awaits</p>
+        </div>
+        <div class="Wine-Country-Awaits-images">
+            <div class="Wine-Country-Awaits-images-first">
+              <img src="images/visit-oakville-crop.jpg">
+              <div class="Wine-Country-Awaits-images-first-text">
+                <span>OAKVILLE WINERY</span>
+                <p>Napa Valley</p>
+                <a>Visit now</a>
+              </div>
+            </div>
+            <div class="Wine-Country-Awaits-images-second">
+              <img src="images/visit-healdsburg-crop.jpg">
+              <div class="Wine-Country-Awaits-images-second-text">
+                <span>HEALDSBURG WINERY</span>
+                <p>Alexander Valley</p>
+                <a>Visit now</a>
+              </div>
+            </div>
+        </div>
+  </div>
+
+
+     <!-- loader -->
+    <div id="loader">
+      <p class="loader-tag">Silveroak...</p>
+    </div>
+    <script>
+      var loader = document.getElementById('loader')
+   function myFunction(){
+       setInterval(function(){
+          
+       loader.style.display = 'none';
+       },2000);
+       
+   };
+   </script>
+
+    <script src="swiper.min.js"></script>
+      
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay:true,
+    loop: true,
+    effect: 'fade',
+    // speed:500,
+     freeMode: true,
+    // init: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  
+
+  });
+</script>
+<!-- <script>
+    $(".swiper-container").each(function(elem, target){
+      var ssecond = target.swiper;
+      $(this).hover(function() {
+          ssecond.autoplay.stop();
+      }, function() {
+          ssecond.autoplay.start();
+      });
+  });
+  </script> -->
+  
+ 
+
+</body>
+</html>

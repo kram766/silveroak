@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    /* display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+    background-size:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .swiper-container .swiper-slide img{
+   background-size: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     object-position: center;
+    transition: 0.5s ease-in;
+  }
+  .banner-image{
+    transform: scale(1.2);
+  }
+  .swiper-slide-active > .banner-image{
+    transform: scale(1);
+  }
+
+    /* header section */
+  
+    .header{
+      position: absolute;
+      top:0px;
+      left:0;
+      width: 100%;
+      z-index: 10;
+     
+     color: #FFFFFF;
+     transition: 0.5s all linear;
+    }
+    .header-firstsection{
+      padding: 10px 200px 10px 200px;
+      width:100%;
+      display: flex;
+     justify-content: space-between;
+     border-bottom:1px solid white;
+     color: white;
+    }
+    .Timeless{
+      border-left:1px solid #ffffff;
+      border-right:1px solid #ffffff;
+      padding: 10px 10px 10px 10px;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+    .twomey{
+      padding: 10px 15px 10px 15px;
+      font-size: 14px;
+      letter-spacing:0.1px;
+    }
+    .Account{
+      font-size: 14px;
+      letter-spacing:0.1px;
+      border-left:1px solid #ffffff;
+      border-right:1px solid #ffffff;
+      padding: 10px 15px 10px 15px;
+    }
+    .Cart{
+      padding: 10px 15px 10px 15px;
+    }
+    #loader{
+    top:0;
+      width:100%;
+      height:100vh;
+      position: fixed;
+      z-index: 9999;
+      background-color: white;
+      display: block;
+  }
+  .loader-tag{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: black;
+  }
+.header-secondsection{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px 30px 200px;
+}
+.header:hover{
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+.header:hover .header-firstsection{
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.header:hover .logo{
+  color: black;
+}
+.header:hover .header-secondsection-secsection ul li a{
+  color: black;
+}
+
+.header:hover .header-secondsection-thirdsection ul li a{
+  color: black;
+}
+.header:hover .header-firstsection .Timeless{
+  border-left:1px solid gray;
+      border-right:1px solid gray;
+}
+.header:hover .Account{
+  border-left:1px solid gray;
+      border-right:1px solid gray;
+}
+.logo{
+  color: white;
+  font-size: 18px;
+  font-weight: inherit;
+}
+.header-secondsection-secsection ul li a:hover{
+  text-decoration: underline;
+}
+.header-secondsection-secsection ul li{
+  list-style-type: none;
+  display: inline-block;
+ padding:0px 20px 0px 20px;
+}
+.header-secondsection-secsection ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s all linear;
+}
+.header-secondsection-secsection ul li a i{
+  margin-left: 10px;
+  font-size: 10px;
+}
+.header-secondsection-thirdsection ul li{
+  list-style-type: none;
+  display: inline-block;
+ padding: 0px 15px 0px 15px;
+}
+.header-secondsection-thirdsection ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.banner-headline{
+  position: absolute;
+  top:50%;
+  left:40%;
+  z-index: 9999;
+  color: white;
+  transform: translate(-40%,-50%);
+ 
+}
+.banner-headline span{
+  font-size: 14px;
+  display: inline-block;
+  transform: translateY(-20px);
+  transition: 0.6s all linear;
+}
+.banner-headline p{
+  font-size: 70px;
+  /* margin-top: 40px; */
+  transform: translateY(100px);
+  transition: 0.6s all linear;
+}
+
+.swiper-slide-active > .banner-headline span{
+  transform: translateY(0px);
+  transition: 0.5s all linear;
+}
+.swiper-slide-active > .banner-headline p{
+  transform: translateY(20px);
+  transition: 0.3s all linear;
+}
+.linebreak{
+  width: 80%;
+  position: fixed;
+  top:80%;
+  z-index: 39999;
+  background-color: lawngreen;
+  margin-left: 15%;
+}
+/* .linebreak hr{
+  width:80%;
+} */
+.California-cabernate{
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto 0px auto;
+  padding-top: 100px;
+}
+.California-cabernate span{
+  font-size: 14px;
+  color: #868685;
+}
+.California-cabernate p{
+  font-size: 40px;
+  margin-top: 80px;
+  line-height: 50px;
+}
+.Shop-Winery-Direct{
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  background-color: #F2F0EC;
+  margin: 100px auto 0px auto;
+}
+.Shop-Winery-Direct-image{
+  width: 50%;
+}
+.Shop-Winery-Direct-image img{
+  width:max-content;
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  object-position: center;
+}
+.Shop-Winery-Direct-text{
+  width: 50%;
+  padding: 0px 50px 50px 50px;
+}  
+.Shop-Winery-Direct-text span{
+  font-size: 14px;
+  color: #868685;
+  margin-top: 200px;
+  display: inline-block;
+}
+.Shop-Winery-Direct-text p{
+  font-size: 40px;
+  margin-top: 40px;
+  line-height: 50px;
+}
+.Shop-Winery-Direct  .Shop-latest-releases{
+  font-size: 14px;
+  color: #868685;
+  margin-top: 50px;
+  line-height: 20px;
+}
+.Shop-Winery-Direct-text a{
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.Shop-Winery-Direct-text i{
+  font-size: 20px;
+  display: inline-block;
+    font-weight: 600;
+    margin-left: 5px;
+    transition: 1s all linear;
+    cursor: pointer;
+}
+.Shop-Winery-Direct-text i:hover{
+  margin-left: 12px;
+}
+.Wine-Country-Awaits{
+  padding-top: 100px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto 0px auto;
+}
+.Wine-Country-Awaits-text span{
+  font-size: 14px;
+  color: #868685;
+}
+.Wine-Country-Awaits-text p{
+  font-size: 40px;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+.Wine-Country-Awaits-images{
+  display: flex;
+ 
+}
+.Wine-Country-Awaits-images-first{
+  width: 50%;
+
+  margin-top: 50px;
+  overflow: hidden;
+  height: 500px;
+  max-width: 400px;
+}
+.Wine-Country-Awaits-images-first img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  transition: 1s all linear;
+}
+.Wine-Country-Awaits-images-first img:hover{
+  transform:scale(1.1);
+}
+.Wine-Country-Awaits-images-second img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  transition: 1s all linear;
+}
+.Wine-Country-Awaits-images-second img:hover{
+  transform:scale(1.1);
+}
+.Wine-Country-Awaits-images-second{
+  width: 50%;
+  max-width: 400px;
+  height: 500px;
+  margin-top: -20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.Wine-Country-Awaits-images-first-text{
+  
+  color:white;
+  z-index: 99;
+  top:50px;
+}
